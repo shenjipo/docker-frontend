@@ -2,9 +2,11 @@
 FROM nginx:alpine  
   
 # 复制构建好的Vue应用文件到nginx的html目录  
-COPY ./wang-blog-client/dist /usr/share/nginx/html/Blog/dist  
-COPY ./template-frontend/dist /usr/share/nginx/html/Template/dist  
+COPY ./blog/dist /usr/share/nginx/html/Blog/dist 
+COPY ./workbench/dist /usr/share/nginx/html/Workbench/dist 
+COPY ./template/dist /usr/share/nginx/html/Template/dist  
 COPY ./wang-love /usr/share/nginx/html/WangLove/dist 
+
 
 # 暴露80端口  
 EXPOSE 80  

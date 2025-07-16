@@ -14,7 +14,6 @@ run:
  	if [ "$$SERVICE" = "2" ]; then make _docker-build-tar; fi ;\
  
 
-
 .PHONY: _build-nginx-image
 _build-nginx-image:
 	docker build -f Dockerfile.nginx -t my-nginx:latest .

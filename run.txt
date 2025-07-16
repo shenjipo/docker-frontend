@@ -1,1 +1,5 @@
+docker kill my-nginx
+docker rm my-nginx
+docker rmi my-nginx
+docker load -i my-nginx.tar
 docker run --name my-nginx -p 80:80 -d my-nginx
